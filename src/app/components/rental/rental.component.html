@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">İd</th>
+        <th scope="col">Marka</th>
+        <th scope="col">İsim</th>
+        <th scope="col">Model</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+ 
+ 
+      <tr *ngFor="let rental of rentals">
+        <th scope="row">{{rental.id}}</th>
+        <td>{{rental.customerName}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+        <td><button class="btn btn-danger">Sepete Ekle</button></td>
+        <td><button class="btn btn-danger">Detay</button></td>
+      </tr>
+    </tbody>
+  </table>  
